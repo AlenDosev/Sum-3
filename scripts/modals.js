@@ -31,8 +31,8 @@
         if (title == null) {
             title = 'Sadan far jeg motion uden at ga til traening';
         }
-        modal.find('#videoSrc').attr('src', "../assets/videos/" + video + ".m4v");
-        modal.find('#videoSrcWebm').attr('src', "../assets/videos/" + video + ".webm");
+        modal.find('#videoSrc').attr('src', "assets/videos/" + video + ".m4v");
+        modal.find('#videoSrcWebm').attr('src', "assets/videos/" + video + ".webm");
         $("#videoTopic").text(topic);
         $(".videoTitle").text(title);
         $("#mainVideo").hide();
@@ -241,8 +241,8 @@ function changeMainVideoSrc(src, topic, title) {
         localStorage.setItem("videoTitle", title);
         $("#videoTopic").text(topic);
         $(".videoTitle").text(title);
-        $("#videoSrc").attr('src', '../assets/videos/' + src + '.m4v');
-        $("#videoSrcWebm").attr('src', '../assets/videos/' + src + '.webm');
+        $("#videoSrc").attr('src', 'assets/videos/' + src + '.m4v');
+        $("#videoSrcWebm").attr('src', 'assets/videos/' + src + '.webm');
         $("#mainVideo").hide();
         $(".uil-reload-css").show();
         $("#mainVideo").load();
@@ -258,8 +258,8 @@ function changeMedicinVideo(id) {
     medicinSwiper.slideTo(id);
 }
 function changeMedicinVideoSrc(src) {
-    $("#medicinVideoSrc").attr('src', '../assets/videos/' + src + '.m4v');
-    $("#medicinVideoSrcWebm").attr('src', '../assets/videos/' + src + '.webm');
+    $("#medicinVideoSrc").attr('src', 'assets/videos/' + src + '.m4v');
+    $("#medicinVideoSrcWebm").attr('src', 'assets/videos/' + src + '.webm');
     $("#medicinMainVideo").hide();
     $(".uil-reload-css").show();
     $("#medicinMainVideo").load();
@@ -430,7 +430,7 @@ function expandModalContainer(item) {
 function downloadPdf() {
     var link = document.createElement("a");
     link.download = '';
-    link.href = "../assets/dummy_pdf.pdf";
+    link.href = "assets/dummy_pdf.pdf";
     link.click();
 }
 

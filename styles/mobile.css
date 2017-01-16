@@ -33,7 +33,7 @@
     .mobile-nav select{
         width: 100%;
         padding: 8px 25px 8px 15px;
-        background:white url(../assets/images/select-dropdown.png) right 0 no-repeat;;
+        background:white url(assets/images/select-dropdown.png) right 0 no-repeat;;
         border-radius: 3px;
         border: solid thin gray;
         -moz-appearance: none;
