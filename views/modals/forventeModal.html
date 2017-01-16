@@ -1,0 +1,122 @@
+﻿<div class="modal-dialog">
+    <!-- Modal content-->
+    <div class="modal-content col-xs-12">
+        <div class="modal--body modal--row col-xs-12">
+            <button type="button" class="modal--close-button" onclick="closeModal()">
+                <span class="glyphicon glyphicon-remove"></span>
+            </button>
+            <div class="introduktion-modal-main col-xs-12">
+                <div class="card--title col-xs-12">
+                    <span>Hvad kan man forvente af en forløbsplan?</span>
+                </div>
+                <div class="row">
+                    <div class="forvente-item" onclick="setForventeType(1)">
+                        <span>Beskrivelse af elementer</span>
+                    </div>
+                    <div class="forvente-item" onclick="setForventeType(2)">
+                        <span>Videoer med patienter</span>
+                    </div>
+                    <div class="stamdata-pointer col-xs-12">
+                        <div id="forventeCircle" class="stamdata-pointer-circle"></div>
+                        <div class="stamdata-pointer-line"></div>
+                    </div>
+                </div>
+                <div class="forvente-content col-xs-12">
+                    <div class="forvente-row-title col-xs-12">
+                        <span>Diagnose</span>
+                    </div>
+                    <div class="forvente-row-text col-xs-12">
+                        <span>Diagnosen stilles af din læge eller lungeambulatoriet. Det er din læge, som skal styre din medicinering.</span>
+                    </div>
+                    <div class="forvente-row-title col-xs-12">
+                        <span>Opfølgende undersøgelse</span>
+                    </div>
+                    <div class="forvente-row-text col-xs-12">
+                        <span>Lægen kan sende dig til forskellige opfølgende undersøgelser. Mange har en fast rutine, hvor man kommer
+                              til konsultation med sin KOL hver 3. eller hver 6. måned. Mange kan nøjes med kun en årlig konsultation om KOL.
+                        </span>
+                    </div>
+                    <div class="forvente-row-title col-xs-12">
+                        <span>Opbygning af viden og erfaring</span>
+                    </div>
+                    <div class="forvente-row-text col-xs-12">
+                        <span>I det temp som du bliver klar til det, er der en del forskellige ting, det vill være godt
+                              for dig at vide om livet med KOL. Mange står klar til at hjælpe.
+                        </span>
+                    </div>
+                    <div class="forvente-row-title col-xs-12">
+                        <span>Træning og andre tilbud</span>
+                    </div>
+                    <div class="forvente-row-text col-xs-12">
+                        <span>I Hverdagen med KOL er der nogle forskellige ting, som det vil være en fordel at justere på. Start gerne i
+                              det små, men hold fokus på endemålet. Læg en plan sammen med din læge.
+                        </span>
+                    </div>
+                    <div class="forvente-row-title col-xs-12">
+                        <span>Opfølgende tilbud</span>
+                    </div>
+                    <div class="forvente-row-text col-xs-12">
+                        <span>
+                            Det er forskelligt, hvad der skal til for at holde en til ilden. Der finder tit tilbud om hold og grupper i
+                            nærheden af der hvor man bor.
+                        </span>
+                    </div>
+                    <div class="forvente-row-text col-xs-12">
+                        <span>
+                            Du kaj læse mere om indholdet i de forskellige faser i sektionen.                           
+                        </span><br />
+                        <span class="information--text-card-link">
+                            <a href="#information">Informationer om KOL</a>
+                        </span><br /><br />
+                    </div>
+                </div>
+                <div class="forvente-content video-content col-xs-12">
+                    <div class="forvente-video-container col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1">
+                        <div class="forvente-video col-xs-12">
+                            <div class="play-btn" onclick="openVideoModal('video1', 'forløbsplanen', 'Inger - Let KOL')">
+                                <i class="fa fa-play fa-lg" aria-hidden="true"></i>
+                                <span>03:06</span>
+                            </div>
+                            <img src="../assets/images/video-thumbnail.png" alt="Se video" onclick="openVideoModal('video1', 'forløbsplanen', 'Inger - Let KOL')" />
+                            <div class="forvente-video-title col-xs-12">
+                                <span>Inger - Let KOL</span>
+                            </div>                          
+                        </div>
+                    </div>
+                    
+                    <div class="forvente-video-container col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1">
+                        <div class="forvente-video col-xs-12">
+                            <div class="play-btn" onclick="openVideoModal('video1', 'forløbsplanen', 'Erling - Middelsvær KOL')">
+                                <i class="fa fa-play fa-lg" aria-hidden="true"></i>
+                                <span>03:06</span>
+                            </div>
+                            <img src="../assets/images/video-thumbnail.png" alt="Se video" onclick="openVideoModal('video1', 'forløbsplanen', 'Erling - Middelsvær KOL')" />
+                            <div class="forvente-video-title col-xs-12">
+                                <span>Erling - Middelsvær KOL</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="forvente-video-container col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1">
+                        <div class="forvente-video col-xs-12">
+                            <div class="play-btn" onclick="openVideoModal('video1', 'forløbsplanen', 'Erling - Middelsvær KOL')">
+                                <i class="fa fa-play fa-lg" aria-hidden="true"></i>
+                                <span>03:06</span>
+                            </div>
+                            <img src="../assets/images/video-thumbnail.png" alt="Se video" onclick="openVideoModal('video1', 'forløbsplanen', 'Erling - Svær KOL')" />
+                            <div class="forvente-video-title col-xs-12">
+                                <span>Erling - Svær KOL</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="forvente-footer col-xs-12">
+                    <span>
+                        Alle behandlingsforløb er individuelle. Det planlægges sammen med læegen, hvad der skal foregå. Dek kan
+                        være forskelle fra sted til sted på, hvad der blivet tilbudt af muligheder. Her er et groft overblik over
+                        de mest almindelige dele, som kan indgå i de første cirka tre år af et behandlingsforløb.
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,289 @@
+﻿<div class="information--header col-xs-12">
+    <div class="col-sm-8 col-xs-7">
+        <span>
+            Der er mange ting, man kan vælge at sætte sig ind i, når man har fået en KOL-diagnose. Her har vi samlet et
+            hurtigt overblik. Der er mere at komme efter under hvert punkt.
+        </span>
+    </div>
+    <div class="information--header-right-col col-sm-4 col-xs-5">
+        <div onclick="openModal('additionsModal')">
+            <div class="infomation--header-btn1">
+                Nyeste tilføjelser
+            </div>
+            <div class="infomation--header-btn2">
+                PER 9. SEPTEMBER 2016
+            </div>
+        </div>
+        
+    </div>    
+</div>
+<div class="information--main-container col-xs-12">
+    <div class="information--column col-sm-6 col-xs-12">
+        <div class="information--image-card col-xs-12" onclick="openModal('accordionListModal')">
+            <div class="btn-1">
+                <i class="fa fa-check fa-lg" aria-hidden="true"></i>
+                <button>Hjælp til inhalatoren</button>
+            </div>
+        </div>
+        <div class="information--text-card col-xs-12">
+            <div class="information--text-card-note">NY</div>
+            <div class="information--text-card-title">
+                <span onclick="openModal('textFirstModal')">Ensomhed</span>
+            </div>
+            <div>
+                <span>Mange med KOL-diagnosen kæmper med ensomhed. Det kan virke uoverkommeligt at opsøge andre.</span>
+                <br>
+                <span class="information--text-card-link" onclick="openModal('textFirstModal')">Læs mere om KOL og ensomhed.</span>
+            </div>
+        </div>
+
+        <div class="information--text-card col-xs-12">
+            <div class="information--text-card-title">
+                <span onclick="openModal('textBehandlereModal')">Forværring</span>
+            </div>
+            <div>
+                <span>Jo tidligere du reagerer på tegnene på en forværring, desto bedre kan det håndteres af en læge.</span>
+                <br>
+                <span class="information--text-card-link" onclick="openModal('textBehandlereModal')">Læs om mulige tegn på forværring.</span>
+            </div>
+        </div>
+    </div>
+    <div class="information--column col-sm-6 col-xs-12">
+        <div class="col-xs-12 information--video-card">
+            <div class="information--video-card-image">
+                <div class="play-btn" onclick="openVideoModal('video1', 'motion', 'Sådan bruger du en AeroChamper');">
+                    <i class="fa fa-play fa-lg" aria-hidden="true"></i>
+                    <span>03:06</span>
+                </div>
+                <img src="../assets/images/video-thumbnail.png" alt="Se video" onclick="openVideoModal('video1', 'motion', 'Sådan bruger du en AeroChamper');" />
+            </div>
+            <div class="information--video-card-text">
+                <span>Sådan bruger du en AeroChamper (0:56)</span>
+            </div>
+            <div class="information--video-card-footer">
+                <div class="information--video-card-footer-wrapper">
+                    <div class="information--video-card-footer-button" onclick="openModal('filmListModal', 'motion')">
+                        <span>FLERE SMÅFILM OM MOTION</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="information--video-card col-sm-12">
+            <div class="information--video-card-image">
+                <div class="play-btn" onclick="openVideoModal('video2', 'medicin', 'Venner, Familie og KOL')">
+                    <i class="fa fa-play fa-lg" aria-hidden="true"></i>
+                    <span>03:06</span>
+                </div>
+                <img src="../assets/images/video-thumbnail-2.png" alt="Se video" onclick="openVideoModal('video2', 'medicin', 'Venner, Familie og KOL')" />
+            </div>
+            <div class="information--video-card-text">
+                <span>Venner, Familie og KOL (3:06)</span>
+            </div>
+            <div class="information--video-card-footer">
+                <div class="information--video-card-footer-wrapper">
+                    <div class="information--video-card-footer-button" onclick="openModal('filmListModal', 'medicin')">
+                        <span>FLERE SMÅFILM OM MEDICIN</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="information--column col-xs-12">
+    <div class="information--footer col-xs-12">
+        <div class="information--footer-title col-xs-12">
+            <span>Alle artikler</span>
+        </div>
+        <div class="swiper-container swiper1">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="link-list-item col-sm-4 col-xs-6">
+                        <div class="modal--footer-row-list-item col-xs-12">
+                            <span>Ambulatoriets rolle ></span>
+                        </div>
+                        <div class="modal--footer-row-list-item col-xs-12">
+                            <span>Andre diagnoser og KOL (Komorbiditet) ></span>
+                        </div>
+                        <div class="modal--footer-row-list-item col-xs-12">
+                            <span onclick="openModal('textAngstModal')">Angst ></span>
+                        </div>
+                        <div class="modal--footer-row-list-item col-xs-12">
+                            <span>Behandlere du kan møde ></span>
+                        </div>
+                        <div class="modal--footer-row-list-item col-xs-12">
+                            <span>Det betyder... (ordliste) ></span>
+                        </div>
+                        <div class="modal--footer-row-list-item col-xs-12">
+                            <span>Ensomhed ></span>
+                        </div>
+                        <div class="modal--footer-row-list-item col-xs-12">
+                            <span>Forværring / Exacerbation ></span>
+                        </div>
+                        <div class="modal--footer-row-list-item col-xs-12">
+                            <span>Første tid med KOL ></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="link-list-item col-sm-4 col-xs-6">
+                        <div class="modal--footer-row-list-item col-xs-12">
+                            <span>Gode dage og dårlige dage ></span>
+                        </div>
+                        <div class="modal--footer-row-list-item col-xs-12">
+                            <span>KOL for begyndere ></span>
+                        </div>
+                        <div class="modal--footer-row-list-item col-xs-12">
+                            <span>KOL for pårørende ></span>
+                        </div>
+                        <div class="modal--footer-row-list-item col-xs-12">
+                            <span>KOL-skole ></span>
+                        </div>
+                        <div class="modal--footer-row-list-item col-xs-12">
+                            <span>Kommunale tilbud ></span>
+                        </div>
+                        <div class="modal--footer-row-list-item col-xs-12">
+                            <span>Kontakt til andre ></span>
+                        </div>
+                        <div class="modal--footer-row-list-item col-xs-12">
+                            <span>Kontrol hos egen læge ></span>
+                        </div>
+                        <div class="modal--footer-row-list-item col-xs-12">
+                            <span>Kostråd ></span>
+                        </div>
+                        <div class="modal--footer-row-list-item col-xs-12">
+                            <span>Lungefunktionstal forklaret ></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="link-list-item col-sm-4 col-xs-6">
+                        <div class="modal--footer-row-list-item col-xs-12">
+                            <span>Lægens opgaver ></span>
+                        </div>
+                        <div class="modal--footer-row-list-item col-xs-12">
+                            <span>Medicin, instruktion ></span>
+                        </div>
+                        <div class="modal--footer-row-list-item col-xs-12">
+                            <span>Motion i hverdagen ></span>
+                        </div>
+                        <div class="modal--footer-row-list-item col-xs-12">
+                            <span>Patientens opgaver ></span>
+                        </div>
+                        <div class="modal--footer-row-list-item col-xs-12">
+                            <span>Patientforeninger ></span>
+                        </div>
+                        <div class="modal--footer-row-list-item col-xs-12">
+                            <span>Pep-fløjten ved slim og hoste ></span>
+                        </div>
+                        <div class="modal--footer-row-list-item col-xs-12">
+                            <span>Rygestoptilbud ></span>
+                        </div>
+                        <div class="modal--footer-row-list-item col-xs-12">
+                            <span>Åndenød ></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="link-list-item col-sm-4 col-xs-6">
+                        <div class="modal--footer-row-list-item col-xs-12">
+                            <span>Ambulatoriets rolle ></span>
+                        </div>
+                        <div class="modal--footer-row-list-item col-xs-12">
+                            <span>Andre diagnoser og KOL (Komorbiditet) ></span>
+                        </div>
+                        <div class="modal--footer-row-list-item col-xs-12">
+                            <span>Angst ></span>
+                        </div>
+                        <div class="modal--footer-row-list-item col-xs-12">
+                            <span>Behandlere du kan møde ></span>
+                        </div>
+                        <div class="modal--footer-row-list-item col-xs-12">
+                            <span>Det betyder... (ordliste) ></span>
+                        </div>
+                        <div class="modal--footer-row-list-item col-xs-12">
+                            <span>Ensomhed ></span>
+                        </div>
+                        <div class="modal--footer-row-list-item col-xs-12">
+                            <span>Forværring / Exacerbation ></span>
+                        </div>
+                        <div class="modal--footer-row-list-item col-xs-12">
+                            <span>Første tid med KOL ></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="link-list-item col-sm-4 col-xs-6">
+                        <div class="modal--footer-row-list-item col-xs-12">
+                            <span>Gode dage og dårlige dage ></span>
+                        </div>
+                        <div class="modal--footer-row-list-item col-xs-12">
+                            <span>KOL for begyndere ></span>
+                        </div>
+                        <div class="modal--footer-row-list-item col-xs-12">
+                            <span>KOL for pårørende ></span>
+                        </div>
+                        <div class="modal--footer-row-list-item col-xs-12">
+                            <span>KOL-skole ></span>
+                        </div>
+                        <div class="modal--footer-row-list-item col-xs-12">
+                            <span>Kommunale tilbud ></span>
+                        </div>
+                        <div class="modal--footer-row-list-item col-xs-12">
+                            <span>Kontakt til andre ></span>
+                        </div>
+                        <div class="modal--footer-row-list-item col-xs-12">
+                            <span>Kontrol hos egen læge ></span>
+                        </div>
+                        <div class="modal--footer-row-list-item col-xs-12">
+                            <span>Kostråd ></span>
+                        </div>
+                        <div class="modal--footer-row-list-item col-xs-12">
+                            <span>Lungefunktionstal forklaret ></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="link-list-item col-sm-4 col-xs-6">
+                        <div class="modal--footer-row-list-item col-xs-12">
+                            <span>Lægens opgaver ></span>
+                        </div>
+                        <div class="modal--footer-row-list-item col-xs-12">
+                            <span>Medicin, instruktion ></span>
+                        </div>
+                        <div class="modal--footer-row-list-item col-xs-12">
+                            <span>Motion i hverdagen ></span>
+                        </div>
+                        <div class="modal--footer-row-list-item col-xs-12">
+                            <span>Patientens opgaver ></span>
+                        </div>
+                        <div class="modal--footer-row-list-item col-xs-12">
+                            <span>Patientforeninger ></span>
+                        </div>
+                        <div class="modal--footer-row-list-item col-xs-12">
+                            <span>Pep-fløjten ved slim og hoste ></span>
+                        </div>
+                        <div class="modal--footer-row-list-item col-xs-12">
+                            <span>Rygestoptilbud ></span>
+                        </div>
+                        <div class="modal--footer-row-list-item col-xs-12">
+                            <span onclick="openModal('andenoed')">Åndenød ></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <span class="swiper-btn information-right glyphicon glyphicon-menu-right"></span>
+        <span class="swiper-btn information-left glyphicon glyphicon-menu-left"></span>
+
+        <div class="information--footer-bottom col-xs-12" data-backdrop="static" onclick="openModal('listModal')">
+            <div class="information--footer-bottom-wrapper">
+                <div class="information--footer-bottom-button">
+                    <span>STIKORD TIL ALLE ARTIKLER</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

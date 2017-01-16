@@ -1,0 +1,105 @@
+﻿/* Cards Start */
+
+.card--row{
+    margin: 0px; 
+    padding-left: 10px;
+    margin-bottom: 4px !important;
+}
+
+.card--header-left{
+    float: left;
+    font-size: 0.6em; 
+    color: #88969A;
+    margin-top: -5px;
+    margin-left: -10px;
+}
+
+.card--header-right{
+    margin-top: -10px;
+    background-color: #7BAA20; 
+    float: right;
+}
+
+.card--header-right{
+    background-image: url("../../assets/images/green.png");
+    background-color: white;
+    background-size: cover;
+    width: 170px; 
+    height: 20px; 
+    float: right;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card--header-right span{
+    color: white;
+    font-size: 0.6em; 
+}
+
+.card--title{
+    color:#4C7A96; 
+    font-size:27px;
+    font-weight: 400;
+    display: table;
+}
+
+.card--content-left{
+    padding-left:0px;
+}
+
+.card--content-left span{
+    font-weight: 600; 
+    font-size: 14px;
+}
+
+.card--content-right span{
+    font-size: 16px;
+}
+
+.card--button{
+    background-color: #4C7A96; 
+    color: white; 
+    border-width: 0px; 
+    border-radius: 3px; 
+    font-size: 15px; 
+    padding: 5px 10px 5px 10px; 
+    position: absolute;
+    right: 25px;
+    bottom: 25px;
+}
+
+.card{
+    background-color: white; 
+    min-height: 100px; 
+    box-shadow: 0 2px 7px #888888; 
+    padding: 10px 20px 30px 20px; 
+    border-radius: 5px;
+    z-index: 2;
+    top: 94px;
+    left: 12.5%;
+    width: 75%;
+    z-index: 2;
+    position: absolute;
+}
+
+.gray{
+    -moz-filter: grayscale(1); 
+    -webkit-filter: grayscale(1); 
+    filter: grayscale(1);
+}
+
+.behind-card > div:nth-child(1){
+    margin-bottom: 0px !important;
+}
+
+.behind-card > div:nth-child(2) > span{
+    font-size: 24px;
+}
+
+.transform{  
+    transition: all 0.9s;
+}
+
+/* Cards End */

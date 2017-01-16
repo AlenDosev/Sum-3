@@ -1,0 +1,265 @@
+﻿<div class="modal-dialog">
+    <!-- Modal content-->
+    <div class="modal-content col-xs-12">
+        <div class="modal--body">
+            <div class="modal--row col-xs-12">
+                <button type="button" class="modal--close-button" onclick="closeModal()">
+                    <span class="glyphicon glyphicon-remove"></span>
+                </button>
+                <div class="modal--main-row" >
+                    <div class="row card--row">
+                        <div class="modal--header-left">
+                            <span>KOL FORLØBSPLAN</span>
+                        </div>
+                        
+                        <div class="modal--header-right" onclick="printPage()">
+                            <span>PRINT</span>
+                            <span class="glyphicon glyphicon-print"></span>
+                        </div>
+                    </div>
+                    <div class="row card--row card--title col-xs-12">
+                        <span id="mainModalTitle">Årskontrol fredag den 22. januar 2016</span>
+                    </div>
+                    <div class="row card--row col-xs-12">
+                        <div class="col-sm-2 col-xs-4 card--content-left">
+                            <span>STED:</span>
+                        </div>
+                        <div class="card--content-right col-sm-10 col-xs-8">
+                            <span id="mainModalPlace">Lægehuset Stadion Allé 34, Lunderskov</span>
+                        </div>
+                    </div>
+                    <div class="row card--row col-xs-12">
+                        <div class="col-sm-2 col-xs-4 card--content-left">
+                            <span>TIDSPUNKT:</span>
+                        </div>
+                        <div class="col-sm-10 col-xs-8 card--content-right">
+                            <span id="mainModalTime">Fredag den 22. januar 2016 kl. 11.20</span>
+                        </div>
+                    </div>
+                    <div class="row card--row col-xs-12">
+                        <div class="card--content-left col-sm-2 col-xs-4">
+                            <span>BEHANDLER:</span>
+                        </div>
+                        <div class="card--content-right col-sm-10 col-xs-8">
+                            <span id="mainModalTreat">AGH</span>
+                        </div>
+                    </div>
+                    <div class="row card--row col-xs-12">
+                        <div class="card--content-left col-sm-2 col-xs-4">
+                            <span>EMNER:</span>
+                        </div>
+                        <div class="card--content-right col-sm-10 col-xs-8">
+                            <span>KOL, lungefunktionsmåling</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal--row col-xs-12">
+                <div class="modal--row-title">
+                    <span>
+                        Registreringer hos lægen
+                    </span>
+                </div>
+                <div class="modal--table">
+                    <table class="col-xs-12">
+                        <tbody>
+                            <tr class="modal--table-odd-row">
+                                <td class="col-xs-6 modal--table-left-cell">
+                                    <span>
+                                        ORDINERET KOL-MEDICIN:
+                                    </span>
+                                </td>
+                                <td class="col-xs-6 modal--table-right-cell">
+                                    <span>1. Inhalation Ultibro breezhaler – dosering: 2 kapsler til inhalation dagligt 
+                                          [evalueret ikke ændret]<br>2. Inhalation Ventoline – dosering: 1 sug ved behov 
+                                          [evalueret ikke ændret]
+                                    </span>
+                                </td>
+                            </tr>
+
+                            <tr class="modal--table-even-row">
+                                <td class="col-xs-6 modal--table-left-cell">
+                                    <span>LIVSSTILSMÅLSÆTNINGER:</span>
+                                </td>
+                                <td class="col-xs-6 modal--table-right-cell">
+                                    <table>
+                                        <tr>
+                                            <td>
+                                                <span>Målsætning 1</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <span>Målsætning 2</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <span>Målsætning 3</span>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+
+                            <tr class="modal--table-odd-row">
+                                <td class="col-xs-6 modal--table-left-cell">
+                                    <span>HENVIST TIL AKTIVITETER I KOMMUNEN</span>
+                                </td>
+                                <td class="col-xs-6 modal--table-right-cell">
+                                    <span>Ja - med henblik på rygestop og vægttab</span>
+                                </td>
+                            </tr>
+
+                            <tr class="modal--table-even-row">
+                                <td class="col-xs-6 modal--table-left-cell">
+                                    <span>HENVIST TIL LUNGEMEDICINSK AFDELING:</span>
+                                </td>
+                                <td class="col-xs-6 modal--table-right-cell"></td>
+                            </tr>
+
+                            <tr class="modal--table-odd-row">
+                                <td class="col-xs-6 modal--table-left-cell">
+                                    <span>HENVIST TIL LUNGEMEDICINSKSPECIALLÆGE:</span>
+                                </td>
+                                <td class="col-xs-6 modal--table-right-cell"></td>
+                            </tr>
+
+                            <tr class="modal--table-even-row">
+                                <td class="col-xs-6 modal--table-left-cell">
+                                    <span>RYGESTOP:</span>
+                                </td>
+                                <td class="col-xs-6 modal--table-right-cell">
+                                    <span>Aftalt + medicineret</span>
+                                </td>
+                            </tr>
+
+                            <tr class="modal--table-odd-row">
+                                <td class="col-xs-6 modal--table-left-cell">
+                                    <span>FYSISK ANSTRENGENDE TRÆNING:</span>
+                                </td>
+                                <td class="col-xs-6 modal--table-right-cell">
+                                    <span>4 timer/uge</span>
+                                    <button>
+                                        <span>OPDATERET</span>
+                                    </button>
+                                </td>
+                            </tr>
+
+                            <tr class="modal--table-even-row">
+                                <td class="col-xs-6 modal--table-left-cell">
+                                    <span>INFLUENZA-VACCINATION:</span>
+                                </td>
+                                <td class="col-xs-6 modal--table-right-cell">
+                                    <span>Foretaget</span>
+                                </td>
+                            </tr>
+
+                            <tr class="modal--table-odd-row">
+                                <td class="col-xs-6 modal--table-left-cell">
+                                    <span>PNEUMOKOK-VACCINATION:</span>
+                                </td>
+                                <td class="col-xs-6 modal--table-right-cell">
+                                    <span>Aftales senere</span>
+                                </td>
+                            </tr>
+
+                            <tr class="modal--table-even-row">
+                                <td class="col-xs-6 modal--table-left-cell">
+                                    <span>INSTRUERET I INHALLATIONSTEKNIK:</span>
+                                </td>
+                                <td class="col-xs-6 modal--table-right-cell">
+                                    <span>Ja</span>   
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="modal--row col-xs-12">
+                <div class="modal--row-title col-xs-12">
+                    <div class="modal--row-title-left">
+                        <span>Lungefunktion</span>
+                    </div>
+                    <div class="modal--row-title-right" id="lungeToggle">
+                        <span>Skjul graf</span>
+                        <span class="glyphicon glyphicon-chevron-down"></span>
+                    </div>
+                </div>
+                <div class="col-xs-12 modal--row-chart" id="lungeRow">
+                    <div class="modal--chart col-xs-12">
+                        <span id="lungeRight" class="swiper-btn charts-right glyphicon glyphicon-menu-right"></span>
+                        <span id="lungeLeft" class="swiper-btn charts-left glyphicon glyphicon-menu-left"></span>                       
+                        <div id="lungeChart"></div>
+                    </div>
+                    <div class="col-xs-12 modal--row-footer">
+                        <span>Tal kommer fra: nn database i nn lægesystem</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal--row col-xs-12">
+                <div class="modal--row-title col-xs-12">
+                    <div class="modal--row-title-left">
+                        <span>Vægt</span>
+                        <span class="modal--row-title-subleft">
+                            | BMI højere end 25
+                        </span>
+                    </div>
+                    <div class="modal--row-title-right" id="vaegtToggle">
+                        <span>Skjul graf</span>
+                        <span class="glyphicon glyphicon-chevron-down"></span>
+                    </div>
+
+                </div>
+                <div class="col-xs-12 modal--row-chart" id="vaegtRow">
+                    <div class="col-xs-12 modal--row-header">
+                        <div class="modal--row-header-left">
+                            <span>KG</span>
+                        </div>
+                        <div class="modal--row-header-right">
+                            <span>NORMALVÆGT 52-68 KG</span>
+                        </div>
+                    </div>
+                    <div class="modal--chart col-xs-12">
+                        <span id="vaegtRight" class="swiper-btn charts-right glyphicon glyphicon-menu-right"></span>
+                        <span id="vaegtLeft" class="swiper-btn charts-left glyphicon glyphicon-menu-left"></span>
+                        <div id="vaegtChart"></div>
+                    </div>
+                    <div class="col-xs-12 modal--row-footer">
+                        <span>Tal kommer fra: nn database i nn lægesystem</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal--row col-xs-12">
+                <div class="modal--row-title col-xs-12">
+                    <div class="modal--row-title-left">
+                        <span>Højde</span>
+                    </div>
+                    <div class="modal--row-title-right" id="hojdeToggle">
+                        <span>Skjul graf</span>
+                        <span class="glyphicon glyphicon-chevron-down"></span>
+                    </div>
+                </div>
+                <div class="col-xs-12 modal--row-chart" id="hojdeRow">
+                    <div class="col-xs-12 modal--row-header">
+                        <div class="modal--row-header-left">
+                            <span>CM</span>
+                        </div>
+                    </div>
+                    <div class="modal--chart col-xs-12">
+                        <span id="hojdeRight" class="swiper-btn charts-right glyphicon glyphicon-menu-right"></span>
+                        <span id="hojdeLeft" class="swiper-btn charts-left glyphicon glyphicon-menu-left"></span>
+                        <div id="hojdeChart"></div>
+                    </div>
+                    <div class="col-xs-12 modal--row-footer">
+                        <span>Tal kommer fra: nn database i nn lægesystem</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

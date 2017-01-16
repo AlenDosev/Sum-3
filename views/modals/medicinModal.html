@@ -1,0 +1,179 @@
+﻿<div class="modal-dialog">
+    <!-- Modal content-->
+    <div class="modal-content col-xs-12">
+        <div class="modal--body modal--row col-xs-12">
+            <button type="button" class="modal--close-button" onclick="pauseVideos()">
+                <span class="glyphicon glyphicon-remove"></span>
+            </button>
+            <div class="introduktion-modal-main col-xs-12">
+                <div class="modal-header col-xs-12">
+                    <a href="#information"><span>Information om KOL ></span></a>
+                    <a href="#accordionListModal"><span>Instruktioner til inhalator-medicin ></span></a>
+                    <span class="medicin-title"></span>
+                </div>
+                <div class="card--title col-sm-12 col-xs-10">
+                    <span class="medicin-title"></span>
+                    <i class="fa fa-star star-btn selected-star" aria-hidden="true"></i>
+                    <div class="print-btn">
+                        <span>Print</span><i class="fa fa-print" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <div class="medicin-video col-xs-12">
+                    <div class='uil-reload-css' style='transform:scale(1);'>
+                        <div></div>
+                    </div>
+                    <span class="swiper-btn medicin-video-right glyphicon glyphicon-menu-right"></span>
+                    <span class="swiper-btn medicin-video-left glyphicon glyphicon-menu-left"></span>
+                    <div id="medicinVideosContainer" class="swiper-container medicin-video-swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="../assets/images/medicine-item-image.png" width="100%" onclick="changeMedicinVideo(1)" alt="Se video" />
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="play-btn medicin-video-play-btn" onclick="playBtnClick(this)">
+                                    <i class="fa fa-play fa-lg" aria-hidden="true"></i>
+                                    <span>00:07</span>
+                                </div>
+                                <video controls="controls" onpause="pauseVideo(this)" onplay="playVideo(this)">
+                                    <source src="../assets/videos/video2.m4v" type="video/mp4">
+                                    <source src="../assets/videos/video2.webm" type="video/webm">
+                                </video>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="play-btn medicin-video-play-btn" onclick="playBtnClick(this)">
+                                    <i class="fa fa-play fa-lg" aria-hidden="true"></i>
+                                    <span>03:06</span>
+                                </div>
+                                <video controls="controls" onpause="pauseVideo(this)" onplay="playVideo(this)">
+                                    <source src="../assets/videos/video1.m4v" type="video/mp4">
+                                    <source src="../assets/videos/video1.webm" type="video/webm">
+                                </video>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="medicin-video-list col-xs-12">
+                    <span class="swiper-btn medicin-right glyphicon glyphicon-menu-right"></span>
+                    <span class="swiper-btn medicin-left glyphicon glyphicon-menu-left"></span>
+                    <div id="medicinListContainer" class="swiper-container medicin-swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="../assets/images/medicine-item-image.png" onclick="changeMedicinVideo(0)" height=100 alt="Se video" />
+                                <div class="swiper-image-text col-xs-12">
+                                    <span>Medicinen</span>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="play-btn" onclick="changeMedicinVideo(1)">
+                                    <i class="fa fa-play fa-lg" aria-hidden="true"></i>
+                                    <span>03:06</span>
+                                </div>
+                                <img src="../assets/images/video-thumbnail-2.png" onclick="changeMedicinVideo(1)" height=100 alt="Se video" />
+                                <div class="swiper-image-text col-xs-12">
+                                    <span>Klargøring</span>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="play-btn" onclick="changeMedicinVideo(2)">
+                                    <i class="fa fa-play fa-lg" aria-hidden="true"></i>
+                                    <span>03:06</span>
+                                </div>
+                                <img src="../assets/images/video-thumbnail.png" onclick="changeMedicinVideo(2)" height=100 alt="Se video" />
+                                <div class="swiper-image-text col-xs-12">
+                                    <span>Indtagelse</span>
+                                </div>
+                            </div>  
+                            <div class="swiper-slide">
+                                <div class="play-btn" onclick="changeMedicinVideo(1)">
+                                    <i class="fa fa-play fa-lg" aria-hidden="true"></i>
+                                    <span>03:06</span>
+                                </div>
+                                <img src="../assets/images/video-thumbnail-2.png" onclick="changeMedicinVideo(1)" height=100 alt="Se video" />
+                                <div class="swiper-image-text col-xs-12">
+                                    <span>Klargøring</span>
+                                </div>
+                            </div> 
+                            <div class="swiper-slide">
+                                <div class="play-btn" onclick="changeMedicinVideo(0)">
+                                    <i class="fa fa-play fa-lg" aria-hidden="true"></i>
+                                    <span>03:06</span>
+                                </div>
+                                <img src="../assets/images/video-thumbnail.png" onclick="changeMedicinVideo(0)" height=100 alt="Se video" />
+                                <div class="swiper-image-text col-xs-12">
+                                    <span>Medicinen</span>
+                                </div>
+                            </div>                          
+                        </div>
+                    </div>
+                    <div class="medicin-expand-btn col-xs-12">
+                        <button class="expand-btn" onclick="expandModalContainer(this)">Vis tekst fra film</button>
+                    </div>
+                    
+                    <div class="medicin-text-container expand-container col-xs-12">
+                        <div class="medicin-text-title col-xs-12">
+                            <span>Klargøring</span>
+                        </div>
+                        <div class="col-xs-12">
+                            <span>
+                                Lorem ipsum dolor site amet, consectetur adipisicing elit, sed do eius mod tempor incididunt ut
+                                labore et dolore. Tt enim ad minim. Lorem ipsum dolor site amet, consectetur adipisicing elit, sed do eius mod tempor incididunt ut
+                                labore et dolore.   
+                            </span>
+                        </div>
+                        <div class="col-xs-12">
+                            <span>
+                                Ut emin ad minim. Lorem ipsum dolor site amet, consectetur adipisicing elit, sed do eius mod tempor incididunt ut
+                                labore et dolore. Ut emin ad minim.
+                            </span>
+                        </div>
+                    </div>
+                </div>  
+                <div class="medicin-table-container col-xs-12">
+                    <div class="medicin-table col-sm-7 col-xs-12">
+                        <div class="medicin-table-row col-xs-12">
+                            <div class="medicin-table-column col-xs-5">
+                                <span>NAVN</span>
+                            </div>
+                            <div class="medicin-table-column col-xs-7">
+                                <span class="medicin-title"></span>
+                            </div>
+                        </div>
+                        <div class="medicin-table-row col-xs-12">
+                            <div class="medicin-table-column col-xs-5">
+                                <span>TYPE</span>
+                            </div>
+                            <div class="medicin-table-column col-xs-7">
+                                <span>Inhalationspulver</span>
+                            </div>
+                        </div>
+                        <div class="medicin-table-row col-xs-12">
+                            <div class="medicin-table-column col-xs-5">
+                                <span>FORM</span>
+                            </div>
+                            <div class="medicin-table-column col-xs-7">
+                                <span>Kapsler 18 mikrogram</span>
+                            </div>
+                        </div>
+                        <div class="medicin-table-row col-xs-12">
+                            <div class="medicin-table-column col-xs-5">
+                                <span>PRODUCENT</span>
+                            </div>
+                            <div class="medicin-table-column col-xs-7">
+                                <span>2car4 Aps</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="medicin-btn-container col-sm-5 col-sm-offset-0 col-xs-10 col-xs-offset-1">
+                        <div class="infomation--header-btn1" onclick="downloadPdf()">
+                            Hent indlægsseddel
+                        </div>
+                        <div class="infomation--header-btn2" onclick="downloadPdf()">
+                            PDF 0,8MB
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

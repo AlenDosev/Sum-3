@@ -1,0 +1,181 @@
+﻿@media screen and (max-width: 480px) {
+    .header--main, .header-top-row, .nav{
+        display: none;
+    }
+
+    .header-mobile{
+        display: block !important;
+        background: white;
+        z-index: 200;
+        padding: 0px;
+        border-bottom: #E3DEDA solid thin;
+    }
+
+    .mobile-nav-menu{
+        padding: 10px 20px;
+        text-align: center;
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    #header {
+        width: 100% !important;
+        margin: 0px !important;
+        padding: 0px;
+    }
+
+    .mobile-nav{
+        padding: 5px 20px;
+        padding-bottom: 15px;
+        text-align: center;
+    }
+
+    .mobile-nav select{
+        width: 100%;
+        padding: 8px 25px 8px 15px;
+        background:white url(../assets/images/select-dropdown.png) right 0 no-repeat;;
+        border-radius: 3px;
+        border: solid thin gray;
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        appearance: none;
+    }
+
+    .mobile-nav option{
+        padding: 5px 10px;
+    }
+
+    .information--header.col-xs-12{
+        padding: 0px;
+    }
+
+    .information--header > div{
+        padding: 0px 10px;
+    }
+
+    #overlay{
+        top: 0px !important;
+        height: 100% !important;
+        margin: 0px !important;
+    }
+
+    #husk{
+        margin-top: 0px !important;
+    }
+
+    .husk-content-inner-row{
+        display: block !important;
+    }
+
+    .husk-content-right-col{
+        margin-top: 5px;
+    }
+
+    .introduktion-content{
+        padding: 20px !important;
+    }
+
+    .introduktion-video-content{
+        padding: 20px 0px !important;
+    }
+
+    .forvente-video-container{
+        padding: 10px;
+        padding-right: 5px;
+    }
+
+    .forvente-content.video-content{
+        padding: 10px 0px 30px 0px;
+    }
+
+    .additions-up, .additions-down{
+        right: 5px;
+    }
+
+    .swiper-line-between{
+        right: 22.5px;
+        height: 360px;
+    }
+
+    .additions-article{
+        padding-right: 45px;
+    }
+
+    .additions-article-text.col-xs-5{
+        padding-right: 0px;
+    }
+
+    .additions-swiper{
+        height: 500px;
+    }
+
+    .additions-down{
+        top: 400px;
+    }
+
+    .stamdata-nav{
+        display: none;
+    }
+
+    .stamdata-nav-mobile{
+        display: block;
+    }
+
+    .migselv, .therapistsm, .consent{
+        display: none;
+    }
+    .stamdata-item{
+        width: 33%;
+    }
+
+    .stamdata-content{
+        padding: 20px 10px;
+    }
+
+    #therapistForm{
+        margin: -13px -10px 0px -10px;
+    }
+
+    .play-btn.medicin-video-play-btn{
+        display: none !important;
+    }
+
+    .medicin-video-right, .medicin-video-left{
+        top: 63px !important;
+    }
+
+    .modal--video-main{
+        min-height: inherit;
+    }
+
+    .medicin-table-container{
+        display: block !important;
+    }
+
+    .medicin-btn-container {
+        padding-right: 30px;
+    }
+    .uil-reload-css{
+        margin: 10px auto !important;
+    }
+
+    .medicin-text-container{
+        padding: 30px 15px !important;
+    }
+
+    .print-btn{
+        right: -30px !important;
+        top: 5px;
+    }
+
+    .introduktion-image{
+        min-height: 280px;
+    }
+}
+
+
+@media screen and (max-width: 330px) {
+    .introduktion-image{
+        min-height: 210px;
+    }
+}

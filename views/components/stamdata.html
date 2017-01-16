@@ -1,0 +1,346 @@
+﻿<div class="row stamdata-content-container col-xs-12">
+    <div class="row stamdata-nav">
+        <div class="stamdata-item" onclick="setCurrentStamdataHash('status')">
+            <span>Status</span>
+        </div>
+        <div class="stamdata-item" onclick="setCurrentStamdataHash('myself')">
+            <span>Mig selv</span>
+        </div>
+        <div class="stamdata-item" onclick="setCurrentStamdataHash('medicin')">
+            <span>KOL-medicin</span>
+        </div>
+        <div class="stamdata-item" onclick="setCurrentStamdataHash('therapists')">
+            <span>Behandlere</span>
+        </div>
+        <div class="stamdata-item" onclick="setCurrentStamdataHash('consent')">
+            <span>Samtykke</span>
+        </div>
+        <div class="stamdata-pointer col-xs-12">
+            <div id="stamdataCircle" class="stamdata-pointer-circle"></div>
+            <div class="stamdata-pointer-line"></div>
+        </div>
+    </div>
+    <div class="row stamdata-nav-mobile">
+        <div class="stamdata-item" onclick="setCurrentStamdataHash('status')">
+            <span>Status</span>
+        </div>
+        <div class="stamdata-item" onclick="setCurrentStamdataHash('medicin')">
+            <span>KOL-medicin</span>
+        </div>
+        <div class="stamdata-item" onclick="setCurrentStamdataHash('therapists')">
+            <span>Behandlere</span>
+        </div>       
+        <div class="stamdata-pointer col-xs-12">
+            <div class="stamdata-pointer-circle stamdataCircle"></div>
+            <div class="stamdata-pointer-line"></div>
+        </div>
+    </div>
+
+    <div class="stamdata-content status col-xs-12">
+        <div class="col-xs-6">
+            <div class="status-name float-right col-lg-8 col-md-8 col-sm-10 col-xs-12">
+                <span>LUNGEFUNKTIONSTAL</span>
+            </div>
+            <div class="status-number float-right col-lg-8 col-md-8 col-sm-10 col-xs-12">
+                <span>61</span>
+            </div>
+            <div class="status-date float-right col-lg-8 col-md-8 col-sm-10 col-xs-12">
+                <span>MÅLT 9. JANUAR 2016</span>
+            </div>
+        </div>
+
+        <div class="col-xs-6">
+            <div class="status-name float-left col-lg-8 col-md-8 col-sm-10 col-xs-12">
+                <span>BLODTRYK</span>
+            </div>
+            <div class="status-number float-left col-lg-8 col-md-8 col-sm-10 col-xs-12">
+                <span>120/80</span>
+            </div>
+            <div class="status-date float-left col-lg-8 col-md-8 col-sm-10 col-xs-12">
+                <span>MÅLT 9. JANUAR 2016</span>
+            </div>
+        </div>
+
+        <div class="col-xs-6">
+            <div class="status-name float-right col-lg-8 col-md-8 col-sm-10 col-xs-12">
+                <span>Højde | CM</span>
+            </div>
+            <div class="status-number float-right col-lg-8 col-md-8 col-sm-10 col-xs-12">
+                <span>166</span>
+            </div>
+            <div class="status-date float-right col-lg-8 col-md-8 col-sm-10 col-xs-12">
+                <span>MÅLT 9. JANUAR 2016</span>
+            </div>
+        </div>
+
+        <div class="col-xs-6">
+            <div class="status-name float-left col-lg-8 col-md-8 col-sm-10 col-xs-12">
+                <span>Vægt</span>
+            </div>
+            <div class="status-number float-left col-lg-8 col-md-8 col-sm-10 col-xs-12">
+                <span>120/80</span>
+            </div>
+            <div class="status-date float-left col-lg-8 col-md-8 col-sm-10 col-xs-12">
+                <span>MÅLT 9. JANUAR 2016</span>
+            </div>
+        </div>
+
+        <div class="status-text col-sm-10 col-sm-offset-1 col-xs-12">
+            <div class="status-text-title col-xs-12">
+                <span>SENESTE ÆRNDRING I MEDICIN</span>
+            </div>
+            <div class="col-xs-12">
+                <span>Dosis af <b>Arem ipsum dolotsitamet</b> ændret fra 1 inhalation dagligt til <b>2 inhalationer dagligt morgen og aften</b></span>
+            </div>
+            <div class="status-date col-xs-12">
+                <span>ÆNDRET 9. JANUAR 2016</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="stamdata-content migselv col-xs-12">
+        <div class="col-sm-2 col-xs-3">
+            <span class="desc">CPR:</span>
+        </div>
+        <div class="col-sm-10 col-xs-9">
+            <span>251248-4918</span>
+        </div>
+
+        <div class="col-sm-2 col-xs-3">
+            <span class="desc">NAVN:</span>
+        </div>
+        <div class="col-sm-10 col-xs-9">
+            <span>Jonna Alma Vestergaard Pedersen</span>
+        </div>
+
+        <div class="col-sm-2 col-xs-3">
+            <span class="desc">ADRESSE:</span>
+        </div>
+        <div class="col-sm-10 col-xs-9">
+            <span>Langelandsgade 13</span>
+        </div>
+
+        <div class="col-sm-2 col-xs-3">
+            <span class="desc">POSTNR:</span>
+        </div>
+        <div class="col-sm-10 col-xs-9">
+            <span>8000 Aarhus C</span>
+        </div>
+
+        <div class="col-sm-2 col-xs-3">
+            <span class="desc">TELEFON:</span>
+        </div>
+        <div class="col-sm-10 col-xs-9">
+            <span>22 33 44 55</span>
+        </div>
+
+        <div class="col-sm-2 col-xs-3">
+            <span class="desc">EMAIL:</span>
+        </div>
+        <div class="col-sm-10 col-xs-9">
+            <span>jonnaalma@alma.dk</span>
+        </div>
+
+        <div class="col-xs-12 migselv-footer">
+            <span>Oplysninger fra Personnummerregisteret</span>
+            <i class="fa fa-question-circle fa-lg" aria-hidden="true"></i>
+        </div>
+
+    </div>
+
+    <div class="stamdata-content medicin col-xs-12">
+        <div class="col-xs-12">
+            <span>
+                Denne liste over medicin er hentet fra nn. Du skal altid følge din læges anvisininger om mængde og anvendelse af medicin
+            </span>
+        </div>
+        <div class="row col-xs-12">
+            <table class="table table-striped stamdata-medicin-table">
+                <tbody>
+                    <tr>
+                        <td>
+                            <span>1</span>
+                        </td>
+                        <td>
+                            <span>Arem ipsum dolotsitamet</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span>2</span>
+                        </td>
+                        <td>
+                            <span>Conseqtetur adipisicingelit</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span>3</span>
+                        </td>
+                        <td>
+                            <span>Do eiusmod temporincididunt</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span>4</span>
+                        </td>
+                        <td>
+                            <span>Do lore manga aliqua</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span>5</span>
+                        </td>
+                        <td>
+                            <span>Veniam quisnostrudexercitation</span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="col-xs-12 medicin-footer">
+            <span>Aftalt med lægen den 7. juli 2015</span>
+        </div>
+    </div>
+
+    <div class="stamdata-content therapists col-xs-12">
+            <div class="row">
+                <div class="therapists-row-title col-xs-12">
+                    <span>Egen læge</span>
+                </div>
+                <div class="col-sm-2 col-xs-3">
+                    <span class="desc">NAVN</span>
+                </div>
+                <div class="col-sm-10 col-xs-9">
+                    <span class="stamdata-content-span">Karin Beate Vemb Madsen</span>
+                </div>
+                <div class="col-sm-2 col-xs-3">
+                    <span class="desc">ADRESSE</span>
+                </div>
+                <div class="col-sm-10 col-xs-9">
+                    <span class="stamdata-content-span">Lægehuset, Banegardsgade 12, 2. th., 5000 Odense</span>
+                </div>
+                <div class="col-sm-2 col-xs-3">
+                    <span class="desc">TELEFON</span>
+                </div>
+                <div class="col-sm-10 col-xs-9">
+                    <span class="stamdata-content-span">90 90 90 90</span>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="therapists-row-title col-xs-12">
+                    <span>Sundhedscenter</span>
+                    <div class="therapists-button">
+                        <span>RET</span>
+                    </div>
+                    <div class="therapists-button therapists-slet">
+                        <span>Slet</span>
+                    </div>
+                </div>
+                <div class="col-sm-2 col-xs-3">
+                    <span class="desc">ADRESSE</span>
+                </div>
+                <div class="col-sm-10 col-xs-9">
+                    <span class="therapists-content-span">Vester Byled 8, 5000 Odense</span>
+                </div>
+                <div class="col-sm-2 col-xs-3">
+                    <span class="desc">TELEFON</span>
+                </div>
+                <div class="col-sm-10 col-xs-9">
+                    <span class="therapists-content-span">80 80 80 80</span>
+                </div>
+            </div>
+
+            <div class="therapists-open-submit col-xs-12">
+                <button onclick="enableTherapistForm()">
+                    <span>TILFØJ FLERE BEHANDLERE</span>
+                </button>
+            </div>
+
+            <div id="therapistForm" class="col-xs-12">
+                <div class="col-xs-12">
+                    <div class="col-sm-5 col-xs-10">
+                        <span class="invisible-span">Sted</span>
+                        <input type="text" class="form-control empty-input" disabled
+                                onfocusout="disfocusInput(this)"
+                                onfocus="focusInput(this)"
+                                placeholder="Sted" />
+                    </div>
+                </div>
+
+                <div class="col-xs-12">
+                    <div class="col-sm-5 col-xs-10">
+                        <span class="invisible-span">Navn</span>
+                        <input type="text" class="form-control empty-input" disabled
+                                onfocusout="disfocusInput(this)"
+                                onfocus="focusInput(this)"
+                                placeholder="Navn" />
+                    </div>
+                </div>
+
+                <div class="col-xs-12">
+                    <div class="col-sm-5 col-xs-10">
+                        <span class="invisible-span">Adresse</span>
+                        <input type="text" class="form-control empty-input" disabled
+                                onfocusout="disfocusInput(this)"
+                                onfocus="focusInput(this)"
+                                placeholder="Adresse" />
+                    </div>
+                </div>
+
+                <div class="col-xs-12">
+                    <div class="col-sm-5 col-xs-10">
+                        <span class="invisible-span">Telefon</span>
+                        <input type="text" class="form-control empty-input" disabled
+                                onfocusout="disfocusInput(this)"
+                                onfocus="focusInput(this)"
+                                placeholder="Telefon" />
+                    </div>
+                </div>
+
+                <div class="col-xs-12">
+                    <div class="col-sm-5 col-xs-10">
+                        <span class="invisible-span">E-mail</span>
+                        <input type="text" class="form-control empty-input" disabled
+                                onfocusout="disfocusInput(this)"
+                                onfocus="focusInput(this)"
+                                placeholder="E-mail" />
+                    </div>
+                </div>
+
+                <div class="col-xs-12">
+                    <div class="col-sm-5 col-xs-10">
+                        <span class="invisible-span">Info</span>
+                        <textarea class="form-control empty-input" disabled
+                                    onfocusout="disfocusInput(this)"
+                                    onfocus="focusInput(this)"
+                                    placeholder="Yderligere information"></textarea>
+                    </div>
+                </div>
+
+                <div class="tilfoj col-xs-12">
+                    <div class="enabled-button-invisible" id="enabledAddButton">
+                        <span class="glyphicon glyphicon-ok-circle"></span>
+                        <div>
+                            <label>Tilføj</label>
+                        </div>
+                    </div>
+                    <input type="button" name="Tilfoj" value="Tilføj" class="disabled-button-visible" disabled id="disabledAddButton" />
+                </div>
+
+            </div>
+        </div>
+
+    <div class="stamdata-content consent col-xs-12">
+        <div class="col-xs-12">
+            <span>Ved oprettelsen af din digitale forløbsplan gav du dit samtykke til at...</span>
+        </div>
+        <div class="col-xs-12 footer--row-list-item">
+            <a>Læs hele teksten til samtykket her</a>
+        </div>
+    </div>
+
+</div>

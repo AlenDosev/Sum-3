@@ -1,0 +1,135 @@
+﻿<div class="modal-dialog">
+    <!-- Modal content-->
+    <div class="modal-content col-xs-12">
+        <div class="modal--body modal--row col-xs-12">
+            <div class="modal--main-row modal--video-content">
+                <button type="button" class="modal--close-button" onclick="pauseVideos()">
+                    <span class="glyphicon glyphicon-remove"></span>
+                </button>
+                <div class="modal-header col-xs-12">
+                    <a href="#information"><span>Information om KOL ></span></a>
+                    <a><span>Smafilm om KOL ></span></a>
+                    <span class="videoTitle">Sadan far jeg motion uden traening</span>
+                </div>
+                <div class="modal--video-main row col-xs-12">
+                    <div class='uil-reload-css' style='transform:scale(1);'>
+                        <div></div>
+                    </div>
+                    <div class="play-btn medicin-video-play-btn" onclick="playBtnClick(this)">
+                        <i class="fa fa-play fa-lg" aria-hidden="true"></i>
+                        <span>03:06</span>
+                    </div>
+                    <video id="mainVideo" controls="controls" onpause="pauseVideo(this)" onplay="playVideo(this)">
+                        <source id="videoSrc" type="video/mp4">
+                        <source id="videoSrcWebm" type="video/webm">
+                    </video>
+                </div>
+                <div class="row card--row col-xs-12">
+                    <div class="modal--video-text-title col-xs-12">
+                        <span class="videoTitle">Sadan far jeg motion uden at ga til traening</span>
+                    </div>
+                </div>                   
+            </div>
+
+            <div class="modal--video-list-content">
+                <div class="modal--video-list-header col-xs-12">
+                    <span>ANDRE SMAFILM OM </span><span id="videoTopic"></span>
+                </div>
+                <div class="modal--video-list-main col-xs-12">
+                    <span class="swiper-btn modal-video-right glyphicon glyphicon-menu-right"></span>
+                    <span class="swiper-btn modal-video-left glyphicon glyphicon-menu-left"></span>                   
+                    <div id="videoListContainer" class="swiper-container video-swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide motion-slide">
+                                <div class="play-btn" onclick="changeMainVideoSrc('video1', 'motion', 'Sådan bruger du en AeroChamper')">
+                                    <i class="fa fa-play fa-lg" aria-hidden="true"></i>
+                                    <span>03:06</span>
+                                </div>
+                                <img src="../assets/images/video-thumbnail.png" onclick="changeMainVideoSrc('video1', 'motion', 'Sådan bruger du en AeroChamper')" height=100 alt="Se video" />
+                            </div>
+                            <div class="swiper-slide motion-slide">
+                                <div class="play-btn" onclick="changeMainVideoSrc('video2', 'medicin', 'Venner, Familie og KOL')">
+                                    <i class="fa fa-play fa-lg" aria-hidden="true"></i>
+                                    <span>03:06</span>
+                                </div>
+                                <img src="../assets/images/video-thumbnail-2.png" onclick="changeMainVideoSrc('video2', 'medicin', 'Venner, Familie og KOL')" height=100 alt="Se video" />
+                            </div>
+                            <div class="swiper-slide motion-slide">
+                                <div class="play-btn" onclick="changeMainVideoSrc('video1', 'motion', 'Sådan bruger du en AeroChamper')">
+                                    <i class="fa fa-play fa-lg" aria-hidden="true"></i>
+                                    <span>03:06</span>
+                                </div>
+                                <img src="../assets/images/video-thumbnail.png" onclick="changeMainVideoSrc('video1', 'motion', 'Sådan bruger du en AeroChamper')" height=100 alt="Se video" />
+                            </div>
+                            <div class="swiper-slide motion-slide">
+                                <div class="play-btn" onclick="changeMainVideoSrc('video2', 'medicin', 'Venner, Familie og KOL')">
+                                    <i class="fa fa-play fa-lg" aria-hidden="true"></i>
+                                    <span>03:06</span>
+                                </div>
+                                <img src="../assets/images/video-thumbnail-2.png" onclick="changeMainVideoSrc('video2', 'medicin', 'Venner, Familie og KOL')" height=100 alt="Se video" />
+                            </div>
+                            <div class="swiper-slide motion-slide">
+                                <div class="play-btn" onclick="changeMainVideoSrc('video1', 'motion', 'Sådan bruger du en AeroChamper')">
+                                    <i class="fa fa-play fa-lg" aria-hidden="true"></i>
+                                    <span>03:06</span>
+                                </div>
+                                <img src="../assets/images/video-thumbnail.png" onclick="changeMainVideoSrc('video1', 'motion', 'Sådan bruger du en AeroChamper')" height=100 alt="Se video" />
+                            </div>
+                            <div class="swiper-slide motion-slide">
+                                <div class="play-btn" onclick="changeMainVideoSrc('video2', 'medicin', 'Venner, Familie og KOL')">
+                                    <i class="fa fa-play fa-lg" aria-hidden="true"></i>
+                                    <span>03:06</span>
+                                </div>
+                                <img src="../assets/images/video-thumbnail-2.png" onclick="changeMainVideoSrc('video2', 'medicin', 'Venner, Familie og KOL')" height=100 alt="Se video" />
+                            </div>
+                            <div class="swiper-slide intro-slide">
+                                <div class="play-btn" onclick="changeMainVideoSrc('intro1', 'introduktion', 'Introduktion 1')">
+                                    <i class="fa fa-play fa-lg" aria-hidden="true"></i>
+                                    <span>03:06</span>
+                                </div>
+                                <img src="../assets/images/intro1.png" onclick="changeMainVideoSrc('intro1', 'introduktion', 'Introduktion 1')" height=100 alt="Se video" />
+                            </div>     
+                            <div class="swiper-slide intro-slide">
+                                <div class="play-btn" onclick="changeMainVideoSrc('intro2', 'introduktion', 'Introduktion 2')" >
+                                    <i class="fa fa-play fa-lg" aria-hidden="true"></i>
+                                    <span>03:06</span>
+                                </div>
+                                <img src="../assets/images/intro2.png" onclick="changeMainVideoSrc('intro2', 'introduktion', 'Introduktion 2')" height=100 alt="Se video" />
+                            </div>     
+                            <div class="swiper-slide intro-slide">
+                                <div class="play-btn" onclick="changeMainVideoSrc('intro3', 'introduktion', 'Introduktion 3')">
+                                    <i class="fa fa-play fa-lg" aria-hidden="true"></i>
+                                    <span>03:06</span>
+                                </div>
+                                <img src="../assets/images/intro3.png" onclick="changeMainVideoSrc('intro3', 'introduktion', 'Introduktion 3')" height=100 alt="Se video" />
+                            </div> 
+                            <div class="swiper-slide forvente-slide">
+                                <div class="play-btn" onclick="changeMainVideoSrc('video1', 'forløbsplanen ', 'Inger - Let KOL')">
+                                    <i class="fa fa-play fa-lg" aria-hidden="true"></i>
+                                    <span>03:06</span>
+                                </div>
+                                <img src="../assets/images/video-thumbnail-2.png" onclick="changeMainVideoSrc('video1', 'forløbsplanen ', 'Inger - Let KOL')" height=100 alt="Se video" />
+                            </div>
+                            <div class="swiper-slide forvente-slide">
+                                <div class="play-btn" onclick="changeMainVideoSrc('video2', 'forløbsplanen ', 'Erling - Middelsvær KOL')">
+                                    <i class="fa fa-play fa-lg" aria-hidden="true"></i>
+                                    <span>03:06</span>
+                                </div>
+                                <img src="../assets/images/video-thumbnail.png" onclick="changeMainVideoSrc('video2', 'forløbsplanen ', 'Erling - Middelsvær KOL')" height=100 alt="Se video" />
+                            </div>
+                            <div class="swiper-slide forvente-slide">
+                                <div class="play-btn" onclick="changeMainVideoSrc('video1', 'forløbsplanen ', 'Erling - Svær KOL')">
+                                    <i class="fa fa-play fa-lg" aria-hidden="true"></i>
+                                    <span>03:06</span>
+                                </div>
+                                <img src="../assets/images/video-thumbnail-2.png" onclick="changeMainVideoSrc('video1', 'forløbsplanen ', 'Erling - Svær KOL')" height=100 alt="Se video" />
+                            </div>                                          
+                        </div>                                             
+                    </div>
+                </div>   
+            </div>
+
+        </div>
+    </div>
+</div>
+

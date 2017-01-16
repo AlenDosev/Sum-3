@@ -1,0 +1,117 @@
+﻿<!DOCTYPE html>
+<html lang="da">
+<head>
+    <title>KOL Forløbsplan</title>
+	<meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link href="styles/site.css" rel="stylesheet" />
+    <link href="styles/print.css" rel="stylesheet" media="print" />
+    <script src="scripts/libraries/jquery-2.2.3.min.js"></script>
+    <script src="scripts/libraries/jquery.mobile.custom.min.js"></script>
+    <script src="scripts/libraries/velocity.min.js"></script>
+    <script src="scripts/libraries/bootstrap.min.js"></script>
+    <script src="scripts/libraries/loader.js"></script>
+    <script id="swiper-min" src="scripts/libraries/swiper.min.js"></script>
+    <script src="scripts/libraries/modernizr-custom.js"></script>   
+    <script src="scripts/app.js"></script>
+    <script src="scripts/hashing.js"></script>
+    <script src="scripts/stamdata.js"></script>
+    <script src="scripts/cards.js"></script>
+    <script src="scripts/modals.js"></script>
+    <script src="scripts/charts.js"></script>    
+</head>
+<body>
+    <div class="row main--row">
+        <div class="col-lg-6 col-md-9 col-sm-12 col-xs-12 screen main">
+            <div id="header" class="row"></div>         
+
+            <div class="nav col-xs-12 ">
+                <div class="nav1">                   
+                    <i class="fa fa-info fa-lg" aria-hidden="true"></i>
+                    <span>Information om KOL</span>
+                    <div class="nav-border-cover"></div>
+                </div>
+                <div class="nav2">
+                    <div class="nav-header">NEM ID</div>
+                    <i class="fa fa-user fa-lg" aria-hidden="true"></i>
+                    <span>Stamdata</span>
+                    <div class="nav-border-cover"></div>
+                </div>
+                <div class="nav3">
+                    <div class="nav-header">NEM ID</div>
+                    <i class="fa fa-user-md fa-lg" aria-hidden="true"></i>
+                    <span>Konsultationer</span>
+                    <div class="nav-border-cover"></div>
+                </div> 
+                <div class="nav4">
+                    <div class="nav-header">NEM ID</div>
+                    <span>Husk</span>
+                    <div class="nav-border-cover"></div>
+                    <i class="fa fa-times fa-lg" aria-hidden="true"></i>
+                </div>   
+                 
+            </div>
+            <div id="overlay"></div>   
+            <div id="information" class="content-element col-xs-12"></div>
+            <div id="stamdata" class="content-element col-xs-12"></div>
+            <div id="konsultationer" class="content-element col-xs-12">
+                <div class="konsultationer--main col-xs-11">        
+                    <div class="konsultationer--content col-xs-12"></div>     
+                    <span onclick="moveUp()" id="goUp" class="sticky glyphicon glyphicon-menu-up"></span>
+                    <span onclick="moveDown()" id="goDown" class="sticky bottom glyphicon glyphicon-menu-down"></span>
+                </div>               
+            </div>
+            <div id="husk" class="content-element col-xs-12"></div>
+                     
+            <div class="footer col-xs-12">
+                <div class="footer-left col-md-6 col-sm-7 col-xs-12">
+                    <div class="footer-title col-xs-12">
+                        <span>Hjælp og svar på spørgsmål om brugen af den digitale forløbsplan</span>
+                    </div>  
+                    <div class="footer-link col-xs-12">
+                        <span onclick="openModal('introduktionModal')">Introduktion til Den digitale forløbsplan</span>
+                    </div>     
+                    <div class="footer-link col-xs-12">
+                        <a href="http://www.sundhed.dk" target="_blank"><span>Generel hjælp på sundhed.dk</span></a>
+                    </div>                      
+                </div>
+                <div class="col-md-2 col-sm-1 col-xs-0"></div>
+                <div class="footer-right col-sm-4 col-xs-12">
+                    <a href="http://www.sum.dk/" target="_blank">
+                        <img src="../assets/images/msfLogo3.png" alt="logo" />
+                    </a><br />
+                    <span>Den digitale forløbsplan leveres som en del af sundhed.dk for Sundheds- og Ældreministeriet</span>
+                </div>
+            </div>            
+        </div>       
+    </div>
+
+    <div class='uil-ring-css' style='transform:scale(1);'>
+        <span>Vent venligst ...</span>
+        <div></div>
+    </div>
+
+    <div id="mainModal" class="modal fade border-left-modal" role="dialog"> </div>
+    <div id="videoModal" class="modal fade border-left-modal" role="dialog"> </div>
+    <div id="listModal" class="modal fade border-left-modal" role="dialog"> </div>
+    <div id="filmListModal" class="modal fade border-left-modal" role="dialog"> </div>
+
+    <div id="textFirstModal" class="modal fade border-left-modal" role="dialog"> </div>
+    <div id="textFlojtenModal" class="modal fade border-left-modal" role="dialog"> </div>
+    <div id="textAndenodModal" class="modal fade border-left-modal" role="dialog"> </div>
+    <div id="textParorendeModal" class="modal fade border-left-modal" role="dialog"> </div>
+
+    <div id="textBehandlereModal" class="modal fade border-left-modal" role="dialog"> </div>
+    <div id="textLaegensModal" class="modal fade border-left-modal" role="dialog"> </div>
+    <div id="textRygestopstilbudModal" class="modal fade border-left-modal" role="dialog"> </div>
+    <div id="textPatiententsModal" class="modal fade border-left-modal" role="dialog"> </div>
+
+    <div id="textAngstModal" class="modal fade border-left-modal" role="dialog"> </div>
+    <div id="textGodeModal" class="modal fade border-left-modal" role="dialog"> </div>
+    <div id="introduktionModal" class="modal fade" role="dialog"> </div>
+    <div id="forventeModal" class="modal fade" role="dialog"> </div>
+    <div id="accordionListModal" class="modal fade" role="dialog"></div>
+    <div id="medicinModal" class="modal fade" role="dialog"></div>
+    <div id="additionsModal" class="modal fade border-left-modal" role="dialog"> </div>
+</body>
+</html>

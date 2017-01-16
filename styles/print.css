@@ -1,0 +1,40 @@
+﻿.main--row, .card--header-left, .modal--header-right, .modal--close-button, .swiper-btn, .modal--row-title-right, .modal-backdrop.fade.in{
+    display: none !important;
+}
+
+#vaegtRow{
+    display: block !important;
+}
+
+#hojdeRow{
+    display: block !important;
+}
+
+.modal-dialog{
+    margin-top: 0px !important;
+}
+
+.modal-content, .modal--main-row{
+    width: 100%;
+    border: none;
+}
+
+.modal--row{
+    padding-bottom: 0px;
+}
+
+#mainModal{
+    overflow-y: hidden;
+}
+
+.modal--table-left-cell{
+    width: 40%;
+}
+
+.modal--table-right-cell{
+    width: 60%;
+}
+
+.modal{
+    position: static !important;
+}

@@ -1,0 +1,158 @@
+﻿<div class="modal-dialog">
+    <!-- Modal content-->
+    <div class="modal-content col-xs-12">
+        <div class="modal--body modal--row col-xs-12">
+            <div class="modal--main-row modal--list-content">
+                <button type="button" class="modal--close-button" onclick="closeModal()">
+                    <span class="glyphicon glyphicon-remove"></span>
+                </button>
+                <div class="modal-header col-xs-12">
+                    <a href="#information"><span>Information om KOL ></span></a>
+                    <span>FLERE FILM OM:</span>
+                </div>
+                <div class="row card--row modal--list-title col-xs-12">
+                    <div class="card--title col-xs-12">
+                        <span>Flere film om:</span>
+                    </div>
+                    <div class="col-xs-12">
+                        <span>
+                            Her kan du se film om KOL, kategoriseret efter emneord.
+                        </span>
+                    </div>
+                </div>
+                <div class="row modal--list-main card--row col-xs-12">
+                    <div class="accordion-row-left">
+                        <span>Behandlere (4)</span>
+                        <i class="fa fa-plus plus-btn" aria-hidden="true" onclick="toggleListModalItems(this)"></i>
+                    </div>
+                    <div class="modal-list-items-wrapper col-xs-12">
+                        <div class="modal-list-items-row col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1">
+                            <div class="modal--film-video-card-image">
+                                <div class="play-btn">
+                                    <i class="fa fa-play fa-lg" aria-hidden="true"></i>
+                                    <span>03:06</span>
+                                </div>
+                                <img src="../assets/images/video-thumbnail.png" alt="Se video"/>
+                            </div>
+                            <div class="modal--film-video-card-text">
+                                <span>Sådan bruger du en AeroChamper (0:56)</span>
+                            </div>
+                        </div>
+
+                        <div class="modal-list-items-row col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1">
+                            <div class="modal--film-video-card-image">
+                                <div class="play-btn">
+                                    <i class="fa fa-play fa-lg" aria-hidden="true"></i>
+                                    <span>03:06</span>
+                                </div>
+                                <img src="../assets/images/video-thumbnail.png" alt="Se video" />
+                            </div>
+                            <div class="modal--film-video-card-text">
+                                <span>Sådan bruger du en AeroChamper (0:56)</span>
+                            </div>
+                        </div>                       
+                    </div>
+                </div>
+                <div class="row card--row modal--list-main col-xs-12">
+                    <div class="accordion-row-left">
+                        <span>Kost (6)</span>
+                        <i class="fa fa-plus plus-btn" aria-hidden="true" onclick="toggleListModalItems(this)"></i>
+                    </div>
+                    <div class="modal-list-items-wrapper col-xs-12">
+                        <div class="modal-list-items-row col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1">
+                            <div class="modal--film-video-card-image">
+                                <div class="play-btn">
+                                    <i class="fa fa-play fa-lg" aria-hidden="true"></i>
+                                    <span>03:06</span>
+                                </div>
+                                <img src="../assets/images/video-thumbnail.png" alt="Se video" />
+                            </div>
+                            <div class="modal--film-video-card-text">
+                                <span>Sådan bruger du en AeroChamper (0:56)</span>
+                            </div>
+                        </div>
+
+                        <div class="modal-list-items-row col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1">
+                            <div class="modal--film-video-card-image">
+                                <div class="play-btn">
+                                    <i class="fa fa-play fa-lg" aria-hidden="true"></i>
+                                    <span>03:06</span>
+                                </div>
+                                <img src="../assets/images/video-thumbnail.png" alt="Se video" />
+                            </div>
+                            <div class="modal--film-video-card-text">
+                                <span>Sådan bruger du en AeroChamper (0:56)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal--list-main row card--row col-xs-12">
+                    <div class="accordion-row-left">
+                        <span>Medicin (18)</span>
+                        <i id="filmListMedicin" class="fa fa-plus plus-btn" aria-hidden="true" onclick="toggleListModalItems(this)"></i>
+                    </div>
+                    <div class="modal-list-items-wrapper col-xs-12">
+                        <div class="modal-list-items-row col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1">
+                            <div class="modal--film-video-card-image">
+                                <div class="play-btn">
+                                    <i class="fa fa-play fa-lg" aria-hidden="true"></i>
+                                    <span>03:06</span>
+                                </div>
+                                <img src="../assets/images/video-thumbnail.png" alt="Se video" />
+                            </div>
+                            <div class="modal--film-video-card-text">
+                                <span>Sådan bruger du en AeroChamper (0:56)</span>
+                            </div>
+                        </div>
+
+                        <div class="modal-list-items-row col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1">
+                            <div class="modal--film-video-card-image">
+                                <div class="play-btn">
+                                    <i class="fa fa-play fa-lg" aria-hidden="true"></i>
+                                    <span>03:06</span>
+                                </div>
+                                <img src="../assets/images/video-thumbnail.png" alt="Se video" />
+                            </div>
+                            <div class="modal--film-video-card-text">
+                                <span>Sådan bruger du en AeroChamper (0:56)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal--list-main row card--row col-xs-12">
+                    <div class="accordion-row-left">
+                        <span>Motion (3)</span>
+                        <i id="filmListMotion" class="fa fa-plus plus-btn" aria-hidden="true" onclick="toggleListModalItems(this)"></i>
+                    </div>
+                    <div class="modal-list-items-wrapper col-xs-12">
+                        <div class="modal-list-items-row col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1">
+                            <div class="modal--film-video-card-image">
+                                <div class="play-btn">
+                                    <i class="fa fa-play fa-lg" aria-hidden="true"></i>
+                                    <span>03:06</span>
+                                </div>
+                                <img src="../assets/images/video-thumbnail.png" alt="Se video" />
+                            </div>
+                            <div class="modal--film-video-card-text">
+                                <span>Sådan bruger du en AeroChamper (0:56)</span>
+                            </div>
+                        </div>
+
+                        <div class="modal-list-items-row col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1">
+                            <div class="modal--film-video-card-image">
+                                <div class="play-btn">
+                                    <i class="fa fa-play fa-lg" aria-hidden="true"></i>
+                                    <span>03:06</span>
+                                </div>
+                                <img src="../assets/images/video-thumbnail.png" alt="Se video" />
+                            </div>
+                            <div class="modal--film-video-card-text">
+                                <span>Sådan bruger du en AeroChamper (0:56)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

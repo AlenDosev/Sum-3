@@ -1,0 +1,119 @@
+﻿.no-flexbox .sticky:before{
+    position: absolute;
+    left: 14.5px;
+    top: 15px;
+}
+
+.no-flexbox .information--video-card-footer-wrapper{
+    margin-left: 20%;
+}
+
+.no-flexbox .information--footer-bottom-wrapper{
+    margin-left: 32.5%;
+}
+
+.no-flexbox .card--header-tag-middle > div{
+    text-align: center;
+}
+
+.no-flexbox .gray > .card--title span{
+    color: gray !important;
+}
+
+.no-flexbox .gray > .card--row > .card--header-right > .card--header-tag-middle div{
+    background-color: darkgray;
+}
+
+.no-flexbox .gray > .card--row > .card--header-right{
+    background-color: darkgray;
+}
+
+.no-flexbox .nav i {
+    padding-top: 4px;
+    padding-left: 9px;
+}
+
+.no-flexbox .nav4 > i{
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.no-flexbox .btn-1 i{
+    padding-top: 9px;
+    padding-left: 7px;
+}
+
+.no-flexbox .information--image-card > .btn-1{
+    margin-left: calc(50% - 100px);
+    margin-top: 90px;
+}
+
+.no-flexbox .infomation--header-btn1{
+    text-align: center;
+    width: 80%;
+    margin-left: 10%;
+}
+
+.no-flexbox .infomation--header-btn2{
+    text-align: center;
+    width: calc(80% - 14px);
+    margin-left: calc(10% + 7px);
+}
+
+.no-flexbox .introduktion-text-number span{
+    padding-left: 14px;
+    padding-top: 5px;
+}
+
+.no-cssfilters .btn-1.gray i, .no-cssfilters .btn-1.gray button{
+    background-color: #727272;
+}
+
+.no-cssfilters .card.gray .card--title{
+    color: gray !important;
+}
+
+.no-cssfilters .card.gray .card--header-right{
+    background-image: url("../assets/images/gray.png");
+}
+
+.no-flexbox .plus-btn{
+    padding-left: 8px;
+    padding-top: 7px;
+}
+
+.no-flexbox .star-btn{
+    padding-top: 8px;
+    padding-left: 8px;
+}
+
+.no-flexbox .accordion-row-content-right-item{
+    margin-top: 5px;
+}
+
+.no-flexbox .swiper-btn{
+    padding-top: 7px;
+    padding-left: 7px;
+}
+
+.no-flexbox .medicin-btn-container .infomation--header-btn1{
+    width: 90%;
+}
+
+.no-flexbox .infomation--header-btn2{
+    width: calc(90% - 14px);
+    margin-left: calc(5% + 7px);
+}
+
+.no-flexbox .introduktion-text-number span{
+    padding: 10px 15px
+}
+
+.no-flexbox .play-btn{
+    max-width: 70px;
+}
+
+.no-flexbox .play-btn i{
+    padding-left: 10px;
+    padding-top: 10px;
+}

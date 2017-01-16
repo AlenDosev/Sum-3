@@ -1,0 +1,344 @@
+﻿#stamdata{
+    padding: 20px 5% 40px 5%;
+    background-color: #F6F1ED; 
+}
+
+.stamdata-nav-mobile{
+    display: none;
+}
+
+.stamdata-content-container{
+    font-size: 16px;
+    background-color: white; 
+    border-style: none; 
+    border: #E3DEDA solid thin; 
+    width: 100%;
+    padding: 0px !important;
+}
+
+.stamdata-item{
+    width: 20%;
+    float: left;
+    text-align: center;
+    padding: 5px;
+    padding-top: 10px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.stamdata-pointer{
+    background-color: inherit; 
+    height: 14px; 
+    padding: 0px; 
+    z-index: 3;
+}
+
+.stamdata-pointer-circle{
+    float: left; 
+    background-color: #AF1F30; 
+    width: 12px; 
+    height: 12px; 
+    border-radius: 100%; 
+    border: solid #E3DEDA 2px; 
+}
+
+.stamdata-pointer-line{
+    height: 7px; 
+    border-bottom-style: solid; 
+    border-color: #E3DEDA;
+    border-width: 2px;
+    width: 100%;
+}
+
+.stamdata-content{
+    width: 100%;
+    display: none;
+    padding: 20px;
+    margin-bottom: 20px;
+    position: absolute;
+}
+
+.stamdata-content .desc{
+    font-weight: 600;
+    font-size: 13px;
+}
+
+.stamdata-content-span{
+    font-size: 15px; 
+}
+
+.stamdata-content > .row{
+    padding: 0px 10px;
+}
+
+.stamdata-content a{
+    border-bottom: 2px dotted #337ab7;
+    cursor: pointer;
+}
+
+.stamdata-content a:hover{
+    text-decoration: none;
+}
+
+.form-control.input-succes{
+    border-left-width: 4px;
+    border-left-color: #1FC45C;
+}
+.form-control.input-error{
+    border-color: #C41F1F;
+}
+
+.float-right{
+    float: right !important;
+}
+
+.float-left{
+    float: left !important;
+}
+
+.therapists{
+    position: initial !important;
+}
+
+input:focus::-webkit-input-placeholder { color:transparent; }
+input:focus:-moz-placeholder { color:transparent; } /* FF 4-18 */
+input:focus::-moz-placeholder { color:transparent; } /* FF 19+ */
+input:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
+
+/* Status Start */
+
+.stamdata-content.status > .col-xs-6{
+    margin: 5px 0px;
+}
+
+.stamdata-content .status-name{
+    text-align: center; 
+    font-size: 11px; 
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.stamdata-content .status-number{
+    text-align: center; 
+    font-size: 30px;
+}
+
+.stamdata-content .status-date{
+    text-align: center; 
+    color: rgb(162, 162, 160); 
+    font-size: 10px
+}
+
+.stamdata-content > .status-text{
+    margin-top: 15px;
+}
+
+.stamdata-content .status-text > div{
+    text-align: center;
+}
+
+.stamdata-content .status-text-title span{
+    font-size: 11px;   
+    font-weight: 600;
+}
+
+/* Status End */
+
+/* Migselv Start */
+
+.stamdata-content.migselv > div{
+    margin: 2px 0px;
+}
+
+.migselv-footer{
+    color: rgb(162, 162, 160);
+    margin: 5px 0px !important;
+}
+
+/* Migselv End */
+
+/* Medicin Start */
+
+.medicin-footer{
+    text-align: right;
+    font-size: 14px;
+    padding-top: 0px !important;
+}
+
+.stamdata-content table{
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.stamdata-medicin-table{
+    background-color:white; 
+    color:black;
+}
+
+/* Medicin End */
+
+/* Therapist Start*/
+
+.therapists > .row{
+    margin-bottom: 15px;
+}
+
+.therapists-open-submit{
+    background-color:transparent; 
+    z-index:5; 
+    color:#4C7A96; 
+    text-align: start;
+    padding: 5px 25px;
+}
+
+.therapists-open-submit button{
+    border-color: #4C7A96; 
+    border-radius: 4px; 
+    background-color: white; 
+    border-style: solid; 
+    border-width:2px;
+}
+
+.therapists-open-submit button span{
+    font-weight: 400;
+    color: #4C7A96; 
+}
+
+.therapists-row-title{
+    padding: 0px 15px;
+}
+
+.therapists-row-title span{
+    float: left;
+}
+
+.therapists-button{
+    margin-left: 10px;
+    padding: 2px 8px;
+    float: left;
+    border-width: thin;  
+    border-color: #E3DEDA;  
+    border-style: solid; 
+    border-radius:3px;     
+    text-align: center;
+    cursor: pointer;
+    color: rgb(162, 162, 160);
+    font-size: 11px;
+}
+
+.therapists-button span{
+    color: rgb(162, 162, 160);
+    font-size: 11px;
+}
+
+.therapists-slet{
+    border-color: #C41F1F;
+}
+
+.therapists-slet span{
+    color:#C41F1F;
+}
+
+#therapistForm{
+    background-color: white; 
+    padding-top: 23px; 
+    border-top-width: 0px; 
+    padding-bottom: 25px;
+    margin: -13px -15px -15px -15px;
+    display: none;
+}
+
+#therapistForm > div{
+    padding: 2px 10px !important;
+}
+
+.invisible-span{
+    color:#5E6B6F; 
+    padding-left:13px; 
+    font-size: 0.7em; 
+    visibility:hidden;
+}
+
+.visible-span{
+    color:#5E6B6F; 
+    padding-left:13px; 
+    font-size: 0.7em; 
+    visibility:visible;
+}
+
+.empty-input{
+    margin-top:-17px;
+}
+
+.full-input{
+    margin-top:-17px;
+    padding-top:15px;
+}
+
+#therapistForm .tilfoj{
+    padding: 5px 25px !important;
+}
+
+.disabled-button-invisible{
+    background-color:#E1E5E6; 
+    border-width:0px; 
+    color:#5E6B6F; 
+    padding: 5px 15px 5px 15px;
+    display:none;
+}
+
+.enabled-button-visible{
+    cursor:pointer;
+    display: initial;
+}
+
+.enabled-button-invisible{
+    cursor:pointer;
+    display:none;
+}
+
+#enabledAddButton span{
+    float:left;
+    z-index:5;
+    color:white; 
+    background-color:#4C7A96; 
+    font-size:30px; 
+    font-weight:100; 
+    border-radius:100%; 
+    float:left;
+    margin-top:10px;
+}
+
+#enabledAddButton div{
+    background-color:#4C7A96; 
+    width:60px; 
+    height:30px; 
+    float:left; 
+    display:flex;
+    margin-left: -15px; 
+    padding-left: 20px;  
+    padding: 5px 45px 5px 20px; 
+    border-radius: 3px;
+    margin-top:10px;
+}
+
+#enabledAddButton label{
+    color:white;
+    font-weight: normal;
+    cursor:pointer;
+}
+
+.disabled-button-visible{
+    background-color:#E3DEDA; 
+    border-width:0px; 
+    color:#5E6B6F; 
+    padding: 5px 15px 5px 15px;
+    display: initial;
+    border-radius: 3px;
+}
+
+.form-control[disabled]{
+    background-color: #F6F1ED;
+}
+
+/* Therapist End*/
