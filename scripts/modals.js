@@ -296,30 +296,12 @@ function closeModal() {
 }
 
 function closeIntroduktion() {
-    $(".header--top-right button").attr('disabled', 'true');
-    $(".modal-backdrop").hide();
-    $('#introduktionModal .modal-content').css({
-        overflow: 'hidden',
-        height: $('#introduktionModal .modal-content').height() + 'px',
-        width: $('#introduktionModal .modal-content').width() + 'px',
-        transition: 'all 1.3s'
-    });
-    setTimeout(function () {
-        $('#introduktionModal .modal-content').css('width', '0px');
-        $('#introduktionModal .modal-content').css('height', '0px');
-        $('#introduktionModal .modal-content').css('margin-left', '650px');
-        $('#introduktionModal .modal-content').css('margin-top', '-20px');
-        $('#introduktionModal .modal-content').css('opacity', '0');
-        setTimeout(function () {
-            $('#introduktionModal').removeClass('in');
-            setTimeout(function () {
-                $('.modal .modal-content').removeAttr("style");
-                $(".header--top-right button").removeAttr('disabled');
-            }, 1000);
-            window.location.hash = currentState;
-            $("body").css("overflow-y", "auto");
-        }, 1000);
-    }, 1);
+    $('.modal').modal('hide');
+    window.location.hash = currentState;
+    window.scrollTo(0, 0);
+    $("body").css("overflow-y", "auto");
+    $(".main--row").css("position", "inherit");
+    $(".main--row").css("overflow-y", "inherit");
 }
 
 function setIntroduktionType(intId) {
