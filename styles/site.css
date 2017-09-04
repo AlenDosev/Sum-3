@@ -13,6 +13,10 @@
 
 /* Common Start */
 
+html{
+    overflow-y: scroll;
+}
+
 body {
     background-color: #fafafa;
     font-size: 16px;
